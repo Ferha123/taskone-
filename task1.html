@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OROMIA REGION RIVERS </title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Our Amzing Rivers Images </h1>
+    </header>
+    <main class="gallery-container">
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0h0g1BLC9_7uW22ejK9J0yWR4lbtHVASWZA&s"
+                alt="didesa river" width="100" height="100">
+            <div class="overlay">DIDESSA RIVER</div>
+        </div>
+        <div class="item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Awash_river.jpg" alt="awash river" width="100"
+                height="100">
+            <div class="overlay">AWASH RIVER</div>
+        </div>
+        <div class="item">
+            <img src="https://borkena.com/wp-content/uploads/2020/02/Genale-Dawa-Dam-_-Ethiopia.jpg" alt="Genale river"
+                width="100" height="100">
+            <div class="overlay">GENALE RIVER</div>
+        </div>
+        <div class="item ">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Gestro_-_Genale.jpg/250px-Gestro_-_Genale.jpg"
+                alt="gestro river" width="100" height="100">
+            <div class="overlay">GESTRO RIVER</div>
+        </div>
+        <div class="item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ATMIS_Support_in_Beletweyne.jpg"
+                alt="shebelle river" width="100" height="100">
+            <div class="overlay">SHEBELLE RIVER</div>
+        </div>
+        <div class="item">
+            <img src="https://www.shutterstock.com/image-photo/ethiopian-wheat-farm-bale-region-260nw-2441049667.jpg"
+                alt="shebelle river" width="100" height="100">
+            <div class="overlay">SHEBELLE RIVER</div>
+
+        </div>
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFVGfZdgSoAq_WpRejhcu1XAo3c2LHfCcvyUUYe2P1cdy-5ak4IdjUGjvq6yBLIyRoldc&usqp=CAU"
+                alt='moger river' width="100 " heigth="100">
+            <div class="overlay">MOGER RIVER</div>
+        </div>
+        <div class="item" id="im2">
+            <img src="https://www.oromoliberationfront.org/Images/oromia2.gif" alt="the map" width="200">
+
+            <div class="overlay">THE MAP</div>
+        </div>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+
+    </div>
+
+    <div class="lightbox_img" id="lightboxImg" src="" alt="">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #090909;
+                color: #ece1e1;
+            }
+
+            header {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            .gallery-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                grid-gap: 0.7rem;
+                max-width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                border: 2px solid rgb(246, 242, 242);
+            }
+
+            .item {
+                position: relative;
+                overflow: hidden;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+                transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            }
+
+            .item img {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+                transition: transform 0.3s ease-in-out;
+                display: grid;
+                grid-template-columns: repeat(out-fit) /minmax(400px, 1fr);
+
+            }
+
+            @media (max-width: 480px) {
+
+                .gallery-container {
+                    max-width: 1024px;
+                    border: 2px solid rgb(191, 89, 89);
+                }
+
+                .item img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    transition: transform 0.3s ease-in-out;
+                    display: grid;
+                    grid-template-columns: repeat(out-fit) /minmax(400px, 1fr);
+                    margin-left: 5rem;
+                    margin-right: 5rem;
+
+                }
+
+            }
+
+            @media(max-width:1024px) {
+                .gallery-container {
+                    max-width: 768px;
+                    border: 2px solid rgb(109, 245, 111);
+                }
+
+                .item img {
+                    width: 100%;
+                    height: 100px;
+                    object-fit: cover;
+                    transition: transform 0.3s ease-in-out;
+                    display: grid;
+                    grid-template-columns: repeat(out-fit) /minmax(360px, 1fr);
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }
+            }
+
+            .item:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            .item:hover img {
+                transform: scale(1.05);
+            }
+
+            .overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: white;
+                padding: 10px;
+                text-align: center;
+                font-size: 0.9em;
+                transform: translateY(100%);
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .item:hover .overlay {
+                transform: translateY(0);
+            }
+
+            .lightbox {
+                display: none;
+                position: fixed;
+                z-index: 9999;
+                padding-top: 60px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.9);
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .lightbox_img {
+                height: 80px;
+                weight: 90px;
+                border-radius=;
+            }
+
+            #im2 {
+                width="300"
+            }
+        </style>
+        <script>
+            const lightbox = document.getElementById("lightbox");
+            const Item = document.queryselectorAll(".item");
+            const lightbox_img = document.getElmetById("lightboxImg")
+
+            function openLightbox(index) {
+                lightbox.style.display = "flex";
+                const img = Item[index];
+                lightbox_img.src = img.src
+
+            }
+            Item.foreach((img, index) => {
+                Item[index].addEventListener('click', () => openLightbox(index));
+            })
+
+        </script>
+
+</body>
+
+</html>
